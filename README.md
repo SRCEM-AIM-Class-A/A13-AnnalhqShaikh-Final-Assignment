@@ -17,6 +17,7 @@
 4. [Flask app](#flask-application-port-5000)
 5. [Django app](#django-application-port-8000)
 6. [Running docker compose](#running-the-applications-with-docker-compose)
+7. [Jenkins Pipeline](#jenkins-pipeline)
 
 ## Introduction
 
@@ -154,3 +155,15 @@ A basic Django application for managing a list of items:
     ```bash
     docker-compose down
     ```
+## Jenkins Pipeline
+
+Key Features: 
+
+1. Environment Variables: Defines Docker registry and image names
+2. Parameters: Allows selecting deployment environment and toggling tests and image pushing
+3. Parallel Execution: Runs lint and test stages in parallel for both applications
+4. Conditional Execution: Only runs tests and pushes images when specified
+5. Security: Uses Jenkins credentials for Docker registry authentication
+6. Environment-specific Deployment: Creates environment-specific overrides for docker-compose
+7. Production Safeguard: Requires manual approval for production deployments
+8. Cleanup: Ensures workspace is cleaned after pipeline execution
