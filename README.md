@@ -10,8 +10,6 @@
 
 </div>
 
----
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Screenshots](#screenshots)
