@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Greet Form{% endblock %}
+
+{% block content %}
+<div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200">
+     <div class="text-center mb-8">
+          <svg class="mx-auto h-12 w-auto text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </svg>
+          <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900">Enter Your Details</h1>
+          <p class="mt-2 text-sm text-gray-600">Please provide your name and age.</p>
+     </div>
+
+     {% if error %}
+     <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-6 rounded-md" role="alert">
+          <div class="flex">
+               <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                         fill="currentColor" aria-hidden="true">
+                         <path fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm-.707-4.707l-3-3a1 1 0 011.414-1.414L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0z"
+                              clip-rule="evenodd" />
+                    </svg>
+               </div>
+               <div class="ml-3">
+                    <p class="text-sm font-medium text-red-800">{{ error }}</p>
+               </div>
+          </div>
+     </div>
+     {% endif %}
+
+     <form method="post" class="space-y-6">
+          <div>
+               <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+               <div class="mt-2">
+                    <input type="text" id="name" name="name" value="{{ name or '' }}" required autocomplete="name"
+                         class="block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 transition duration-150 ease-in-out">
+               </div>
+          </div>
+          <div>
+               <label for="age" class="block text-sm font-medium leading-6 text-gray-900">Age</label>
+               <div class="mt-2">
+                    <input type="text" id="age" name="age" value="{{ age or '' }}" required inputmode="numeric"
+                         pattern="[0-9]+"
+                         class="block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 transition duration-150 ease-in-out">
+               </div>
+          </div>
+          <div>
+               <button type="submit"
+                    class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-150 ease-in-out cursor-pointer">
+                    Submit Details
+               </button>
+          </div>
+     </form>
+</div>
+<div class="text-center mt-6">
+     <a href="{{ url_for('home') }}"
+          class="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out inline-flex items-center">
+          <svg class="mr-1 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+          </svg>
+          Back to Home
+     </a>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Flask/Django specific
+instance/
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.py[cod]
+*.coverage
+.coverage.*
+*.mypy_cache/
+*.pytest_cache/
+htmlcov/
+*.mo
+
+# Django specific
+*.db
+*.dat
+*.sqlite3
+media/
+staticfiles/
+static/
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
