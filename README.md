@@ -11,12 +11,12 @@
 </div>
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Screenshots](#screenshots)
-- [Project Structure](#project-structure)
-- [Flask app](#flask-application-port-5000)
-- [Django app](#django-application-port-8000)
-- [Running docker compose](#running-the-applications-with-docker-compose)
+1. [Introduction](#introduction)
+2. [Screenshots](#screenshots)
+3. [Project Structure](#project-structure)
+4. [Flask app](#flask-application-port-5000)
+5. [Django app](#django-application-port-8000)
+6. [Running docker compose](#running-the-applications-with-docker-compose)
 
 ## Introduction
 
