@@ -50,8 +50,18 @@ Docker images:
 
 <h4>Django app</h4>
 <div align="center">
-     <img src="./screens/django/image.png" alt="Django" width="600">
+     <img src="./screens/django/image.png" alt="Django" width="600" height="500">
      <p>Django app with database</p>
+</div>
+
+<h4>Apps running from docker containers</h4>
+<div align="center">
+     <img src="./screens/docker-image/django-image.png" alt="Django-from-docker" width="600">
+     <p>Django app running from docker container</p>
+</div>
+<div align="center">
+     <img src="./screens/docker-image/flask-image.png" alt="flask-from-docker" width="600">
+     <p>Flask app running from docker container</p>
 </div>
 </div>
 
