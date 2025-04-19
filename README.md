@@ -1,8 +1,65 @@
-# Flask and Django Dockerized Applications
+<div align="center">
+     <h1>Flask and Django Dockerized Application</h1>
+</div>
 
-This project demonstrates two separate web applications, one built with Flask and the other with Django, orchestrated using Docker Compose.
+<div align="center">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+
+</div>
+
+---
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Screenshots](#screenshots)
+- [Project Structure](#project-structure)
+- [Flask app](#flask-application-port-5000)
+- [Django app](#django-application-port-8000)
+- [Running docker compose](#running-the-applications-with-docker-compose)
+
+## Introduction
+
+Name: Annalhq Shaikh
+Roll No: 13
+
+Containerized both Flask and Django apps using Docker Compose 
+
+Docker images:
+1. [Flask app image](https://hub.docker.com/r/annalhq/compose-flask/)
+2. [Django app image](https://hub.docker.com/r/annalhq/compose-django)
+
+## Screenshots
+
+<div>
+<h4>Flask app</h4>
+<div align="center">
+     <img src="./screens/flask/home.png" alt="Flask Homepage" width="600">
+     <p>Flask Homepage</p>
+</div>
+
+<div align="center">
+     <img src="./screens/flask/details.png" alt="form page" width="600">
+     <p>Form</p>
+</div>
+
+<div align="center">
+     <img src="./screens/flask/greet.png" alt="greeting page" width="600">
+     <p>Greeting page</p>
+</div>
+
+<h4>Django app</h4>
+<div align="center">
+     <img src="./screens/django/image.png" alt="Django" width="600">
+     <p>Django app with database</p>
+</div>
+</div>
+
 
 ## Project Structure
+
 <details>
 <summary>Click here to view project structure</summary>
 
